@@ -463,7 +463,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 .rules-highlight{color:var(--accent);font-weight:600}
 .rules-weapon-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:10px}
 .rules-weapon-item{display:flex;align-items:center;gap:12px;padding:10px 14px;background:rgba(255,59,59,.06);border:1px solid rgba(255,59,59,.15);border-radius:6px}
-.rules-weapon-icon{font-size:20px;opacity:.9}
+.rules-weapon-icon{width:42px;height:42px;display:flex;align-items:center;justify-content:center;flex-shrink:0;opacity:.95}
 .rules-weapon-info{flex:1}
 .rules-weapon-name{font-size:13px;font-weight:600;color:var(--text)}
 .rules-weapon-desc{font-size:11px;color:var(--muted)}
@@ -597,7 +597,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 /* 装备区 - 2列槽位 */
 .bp-equipment-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
 .bp-equip-slot{background:rgba(12,20,36,.6);border:1px solid rgba(255,255,255,.08);border-radius:5px;padding:6px 8px;display:flex;align-items:center;gap:7px;min-height:42px}
-.bp-equip-icon{width:26px;height:26px;flex-shrink:0;border-radius:4px;background:linear-gradient(160deg,rgba(20,30,50,.9),rgba(10,16,28,.95));border:1px solid rgba(255,182,39,.15);display:flex;align-items:center;justify-content:center;font-size:12px}
+.bp-equip-icon{width:30px;height:26px;flex-shrink:0;border-radius:4px;background:linear-gradient(160deg,rgba(20,30,50,.9),rgba(10,16,28,.95));border:1px solid rgba(255,182,39,.15);display:flex;align-items:center;justify-content:center;padding:2px 0}
 .bp-equip-info{flex:1;min-width:0}
 .bp-equip-name{font-size:10px;font-weight:700;color:var(--text);margin-bottom:1px;letter-spacing:.03em}
 .bp-equip-status{font-size:9px;color:var(--muted);font-family:'Orbitron',sans-serif;letter-spacing:.04em}
@@ -662,7 +662,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 .inshop-item{position:relative;display:flex;flex-direction:column;gap:8px;padding:16px;background:rgba(18,28,48,.6);border:1px solid rgba(255,255,255,.08);border-radius:8px;cursor:pointer;transition:all .2s}
 .inshop-item:hover{transform:translateY(-2px);border-color:rgba(255,182,39,.35);box-shadow:0 6px 20px rgba(0,0,0,.25),0 0 16px rgba(255,182,39,.1)}
 .inshop-item.owned{border-color:rgba(61,214,140,.4);background:rgba(61,214,140,.08)}
-.inshop-item-icon{font-size:28px;text-align:center;opacity:.8}
+.inshop-item-icon{height:36px;display:flex;align-items:center;justify-content:center;opacity:.9;padding:2px 0}
 .inshop-item-name{font-family:'Orbitron',sans-serif;font-size:14px;font-weight:600;color:var(--text);text-align:center}
 .inshop-item-desc{font-size:11px;color:var(--muted);text-align:center;line-height:1.4}
 .inshop-item-price{display:flex;align-items:center;justify-content:center;gap:6px;font-family:'Orbitron',sans-serif;font-size:14px;font-weight:700;color:#ffd700;text-shadow:0 0 6px rgba(255,215,0,.3);margin-top:4px}
@@ -688,7 +688,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 .shop-header{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(255,182,39,.06);position:relative;overflow:hidden}
 .shop-header::after{content:'';position:absolute;left:0;bottom:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);transform-origin:left;transform:scaleX(0)}
 .shop-title{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:700;letter-spacing:.15em;color:var(--accent);text-shadow:0 0 10px rgba(255,182,39,.3);opacity:0;animation:shopTabSlide .4s ease-out .1s forwards}
-.shop-coins-display{font-family:'Orbitron',sans-serif;font-size:16px;font-weight:700;color:#ffd700;text-shadow:0 0 8px rgba(255,215,0,.4);opacity:0;animation:shopTabSlide .4s ease-out .2s forwards}
+.shop-coins-display{font-family:'Orbitron',sans-serif;font-size:16px;font-weight:700;color:#ffd700;text-shadow:0 0 8px rgba(255,215,0,.4);opacity:1;animation:shopTabSlide .4s ease-out .2s}
 .shop-coins-display.pulse{animation:shopCoinPulse .4s ease-out}
 .shop-close{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:6px;cursor:pointer;color:var(--muted);font-size:18px;transition:all .15s;user-select:none;z-index:10}
 .shop-close:hover{color:var(--danger);border-color:var(--danger);background:rgba(255,59,59,.08);transform:scale(1.05)}
@@ -705,7 +705,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 .shop-card:hover::before{opacity:1;animation:shopShimmer .6s ease-out}
 .shop-card.purchased{border-color:rgba(61,214,140,.4);background:rgba(61,214,140,.08)}
 .shop-card.purchased:hover{transform:none;box-shadow:0 0 12px rgba(61,214,140,.2)}
-.shop-card-icon{font-size:24px;text-align:center;opacity:.8;transition:transform .3s}
+.shop-card-icon{height:32px;display:flex;align-items:center;justify-content:center;opacity:.9;transition:transform .3s;padding:2px 0}
 .shop-card:hover .shop-card-icon{transform:scale(1.1) rotate(-3deg)}
 .shop-card-name{font-family:'Orbitron',sans-serif;font-size:13px;font-weight:600;color:var(--text);text-align:center}
 .shop-card-desc{font-size:11px;color:var(--muted);text-align:center;line-height:1.3}
@@ -719,6 +719,31 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 @media(max-width:600px){#shop-modal .shop-panel{width:100%;border-radius:0}.shop-grid{grid-template-columns:1fr}}
 @media(max-width:800px){.gameover-stats{grid-template-columns:repeat(2,1fr);max-width:400px}}
 @media(max-width:400px){.gameover-stats{grid-template-columns:1fr;max-width:300px}}
+
+/* ===== 金币不足提示框 ===== */
+@keyframes goldWarnIn{0%{opacity:0;transform:translate(-50%,-20px) scale(.9)}60%{transform:translate(-50%,4px) scale(1.02)}100%{opacity:1;transform:translate(-50%,0) scale(1)}}
+@keyframes goldWarnOut{0%{opacity:1;transform:translate(-50%,0) scale(1)}100%{opacity:0;transform:translate(-50%,-16px) scale(.95)}}
+#gold-warn-toast{position:fixed;top:22%;left:50%;transform:translate(-50%,0);z-index:200;padding:14px 36px;border-radius:8px;font-family:'Orbitron','Rajdhani',sans-serif;font-size:15px;font-weight:700;letter-spacing:.12em;pointer-events:none;opacity:0;background:rgba(40,8,8,.85);border:1px solid rgba(255,80,80,.45);color:#ff7878;box-shadow:0 8px 32px rgba(255,0,0,.2),0 0 24px rgba(255,80,80,.15),inset 0 1px 0 rgba(255,255,255,.05);backdrop-filter:blur(16px) saturate(110%);text-shadow:0 0 8px rgba(255,80,80,.4);display:flex;align-items:center;gap:10px;white-space:nowrap}
+#gold-warn-toast.show{animation:goldWarnIn .3s cubic-bezier(.34,1.56,.64,1) forwards}
+#gold-warn-toast.hide{animation:goldWarnOut .3s ease-out forwards}
+#gold-warn-toast .gw-icon{font-size:20px;filter:drop-shadow(0 0 4px rgba(255,80,80,.5))}
+
+/* ===== 储物空间格子 ===== */
+.bp-storage-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin-top:4px}
+.bp-storage-slot{height:42px;background:rgba(12,20,36,.6);border:1px solid rgba(255,255,255,.08);border-radius:5px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;position:relative;cursor:pointer;transition:all .15s}
+.bp-storage-slot:hover{border-color:rgba(255,182,39,.4);box-shadow:0 0 10px rgba(255,182,39,.1)}
+.bp-storage-slot.empty{cursor:default}
+.bp-storage-slot.empty:hover{border-color:rgba(255,255,255,.08);box-shadow:none}
+.bp-storage-slot .bp-ss-icon{width:100%;height:26px;display:flex;align-items:center;justify-content:center;opacity:.9;padding:0 2px}
+.bp-storage-slot .bp-ss-count{font-size:9px;font-weight:700;color:var(--accent);position:absolute;bottom:1px;right:3px}
+.bp-storage-slot.equippable{border-color:rgba(255,182,39,.25);cursor:pointer}
+.bp-storage-slot.equippable:hover{border-color:rgba(255,182,39,.6);box-shadow:0 0 12px rgba(255,182,39,.2)}
+
+/* 装备槽可点击 */
+.bp-equip-slot{cursor:pointer;transition:all .15s}
+.bp-equip-slot:hover{border-color:rgba(255,182,39,.35);box-shadow:0 0 10px rgba(255,182,39,.1)}
+.bp-equip-slot.unequippable:hover{border-color:rgba(255,59,59,.3);box-shadow:0 0 8px rgba(255,59,59,.1)}
+.bp-equip-action-hint{font-size:9px;color:var(--muted);letter-spacing:.05em;margin-top:2px}
 
 /* ===== 自定义战术鼠标光标（系统箭头+装饰） ===== */
 /* 自定义战术指针光标 - 深色主体 + 橙色发光轮廓 */
@@ -954,7 +979,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
           </div>
         </div>
         <div class="bp-section">
-          <div class="bp-section-title">装备防护</div>
+          <div class="bp-section-title">装备防护 · 点击脱下</div>
           <div class="bp-equipment-grid">
             <div class="bp-equip-slot" id="bp-helmet-slot">
               <div class="bp-equip-icon">&#x1F9E2;</div>
@@ -970,6 +995,12 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
                 <div class="bp-equip-status" id="bp-armor-status"><span class="bp-equip-empty">未装备</span></div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="bp-section">
+          <div class="bp-section-title">储物空间 · 点击装备穿戴</div>
+          <div class="bp-storage-grid" id="bp-storage-grid">
+            <!-- JS 动态生成 10 个格子 -->
           </div>
         </div>
         <div class="bp-section">
@@ -1090,30 +1121,33 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
           <div class="rule-item"><span class="ctrl-key">E</span><span class="rule-desc">打开/关闭背包</span></div>
           <div class="rule-item"><span class="ctrl-key">M</span><span class="rule-desc">展开大地图</span></div>
           <div class="rule-item"><span class="ctrl-key">F</span><span class="rule-desc">切换全屏</span></div>
-          <div class="rule-item"><span class="ctrl-key">1</span><span class="rule-desc">使用加速剂</span></div>
-          <div class="rule-item"><span class="ctrl-key">2</span><span class="rule-desc">使用强化弹</span></div>
-          <div class="rule-item"><span class="ctrl-key">3</span><span class="rule-desc">使用急救包</span></div>
-          <div class="rule-item"><span class="ctrl-key">B</span><span class="rule-desc">打开战术商店（波次结束30秒内）</span></div>
-          <div class="rule-item"><span class="ctrl-key">ESC</span><span class="rule-desc">暂停游戏</span></div>
+          <div class="rule-item"><span class="ctrl-key">1</span><span class="rule-desc">切换武器槽位 1</span></div>
+          <div class="rule-item"><span class="ctrl-key">2</span><span class="rule-desc">切换武器槽位 2</span></div>
+          <div class="rule-item"><span class="ctrl-key">3</span><span class="rule-desc">切换武器槽位 3</span></div>
+          <div class="rule-item"><span class="ctrl-key">F1</span><span class="rule-desc">使用加速剂</span></div>
+          <div class="rule-item"><span class="ctrl-key">F2</span><span class="rule-desc">使用强化弹</span></div>
+          <div class="rule-item"><span class="ctrl-key">F3</span><span class="rule-desc">使用急救包</span></div>
+          <div class="rule-item"><span class="ctrl-key">B</span><span class="rule-desc">打开战术商店（购买阶段）</span></div>
+          <div class="rule-item"><span class="ctrl-key">ESC</span><span class="rule-desc">暂停游戏 / 关闭界面</span></div>
         </div>
       </div>
       <div class="rules-section">
         <div class="rules-section-title">敌人武器体系</div>
         <div class="rules-weapon-list">
           <div class="rules-weapon-item">
-            <span class="rules-weapon-icon" style="color:#ff6b6b">&#x1F52B;</span>
+            <span class="rules-weapon-icon"><svg viewBox="0 0 48 48" width="42" height="42" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="11" r="5" fill="#b05050"/><rect x="18" y="16" width="12" height="14" rx="2" fill="#a03030"/><rect x="19" y="30" width="3.5" height="11" fill="#5a1818"/><rect x="25.5" y="30" width="3.5" height="11" fill="#5a1818"/><rect x="7" y="20" width="23" height="2.5" rx="0.5" fill="#2a2a2a"/><rect x="13" y="22.5" width="4" height="4.5" rx="0.5" fill="#333"/><rect x="28" y="19" width="7" height="1.5" fill="#1a1a1a"/><rect x="21" y="14" width="6" height="2" rx="0.5" fill="#7a2828"/></svg></span>
             <div class="rules-weapon-info"><div class="rules-weapon-name">突击步枪兵</div><div class="rules-weapon-desc">中距离 · 伤害8 · 射速快 · 生命80</div></div>
           </div>
           <div class="rules-weapon-item">
-            <span class="rules-weapon-icon" style="color:#ff8844">&#x1F680;</span>
+            <span class="rules-weapon-icon"><svg viewBox="0 0 48 48" width="42" height="42" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="11" r="5" fill="#cc6633"/><rect x="18" y="16" width="12" height="14" rx="2" fill="#aa5522"/><rect x="19" y="30" width="3.5" height="11" fill="#662211"/><rect x="25.5" y="30" width="3.5" height="11" fill="#662211"/><rect x="5" y="19" width="21" height="5" rx="1.5" fill="#3a3a3a"/><rect x="3" y="20" width="4" height="3" rx="0.5" fill="#1a1a1a"/><circle cx="26.5" cy="21.5" r="2.2" fill="#ff6622"/><rect x="20" y="14" width="6" height="2" rx="0.5" fill="#884422"/></svg></span>
             <div class="rules-weapon-info"><div class="rules-weapon-name">火箭兵</div><div class="rules-weapon-desc">远距离 · 伤害25 · 范围爆炸 · 生命120</div></div>
           </div>
           <div class="rules-weapon-item">
-            <span class="rules-weapon-icon" style="color:#c080ff">&#x2694;</span>
+            <span class="rules-weapon-icon"><svg viewBox="0 0 48 48" width="42" height="42" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="11" r="5" fill="#8855cc"/><rect x="18" y="16" width="12" height="14" rx="2" fill="#6633aa"/><rect x="19" y="30" width="3.5" height="11" fill="#331166"/><rect x="25.5" y="30" width="3.5" height="11" fill="#331166"/><rect x="32" y="6" width="2.2" height="24" rx="0.5" fill="#d8d8e0"/><rect x="29.5" y="28" width="7" height="2.2" rx="0.5" fill="#888"/><rect x="32.6" y="30" width="1.2" height="5" fill="#553388"/><rect x="21" y="14" width="6" height="2" rx="0.5" fill="#553388"/></svg></span>
             <div class="rules-weapon-info"><div class="rules-weapon-name">剑士</div><div class="rules-weapon-desc">近距离 · 伤害18 · 高速冲锋 · 生命60</div></div>
           </div>
           <div class="rules-weapon-item">
-            <span class="rules-weapon-icon" style="color:#ffcc44">&#x1F4A3;</span>
+            <span class="rules-weapon-icon"><svg viewBox="0 0 48 48" width="42" height="42" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="11" r="5" fill="#ccaa44"/><rect x="18" y="16" width="12" height="14" rx="2" fill="#aa8822"/><rect x="19" y="30" width="3.5" height="11" fill="#665511"/><rect x="25.5" y="30" width="3.5" height="11" fill="#665511"/><rect x="5" y="18" width="23" height="6" rx="2" fill="#3a3a2a"/><circle cx="7.5" cy="21" r="3.8" fill="#5a4a2a"/><circle cx="7.5" cy="21" r="2.2" fill="#1a1a0a"/><rect x="21" y="14" width="6" height="2" rx="0.5" fill="#886611"/></svg></span>
             <div class="rules-weapon-info"><div class="rules-weapon-name">炮兵</div><div class="rules-weapon-desc">超远距离 · 伤害35 · 慢速重击 · 生命150</div></div>
           </div>
         </div>
@@ -1124,19 +1158,21 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
           <ul>
             <li><span class="rules-highlight">波次生存</span>：每波敌人数量递增，击杀全部敌人后进入下一波，波次无限。</li>
             <li><span class="rules-highlight">爆头系统</span>：瞄准敌人头部可造成<span class="rules-highlight">3倍伤害</span>，快速消灭敌人。</li>
-            <li><span class="rules-highlight">金币系统</span>：击败敌人可获得金币（普通击杀20-40金币，爆头30-60金币），金币永久保存。</li>
-            <li><span class="rules-highlight">武器体系</span>：四种敌人武器各具特色——突击步枪兵中距离连射、火箭兵范围爆炸、剑士近身冲锋、炮兵超远重击。针对不同敌人合理选择掩体和战术。</li>
-            <li><span class="rules-highlight">战术商店</span>：每波结束后按<span class="rules-highlight">B键</span>打开游戏内商店，可购买武器、消耗品和装备。购买的物品只在本局有效。</li>
-            <li><span class="rules-highlight">局外商店</span>：游戏开始界面的商店可预购装备，购买的武器/装备在下局游戏开始时自动生效。</li>
-            <li><span class="rules-highlight">装备系统</span>：头盔减少头部伤害（1级15%/2级25%），防弹衣减少身体伤害（1级20%/2级35%）。</li>
-            <li><span class="rules-highlight">弹药管理</span>：弹匣30发，备弹120发。波次间自动补充60发备弹。</li>
+            <li><span class="rules-highlight">金币系统</span>：击败敌人可获得金币（普通击杀20-40金币，爆头30-60金币）。金币分两部分：<span class="rules-highlight">总金币</span>永久保存（用于开始界面商店），<span class="rules-highlight">本局金币</span>仅当局有效（用于购买阶段商店，击杀敌人获得，开局重置为0）。</li>
+            <li><span class="rules-highlight">敌人体系</span>：四种敌人各具特色——突击步枪兵中距离连射、火箭兵范围爆炸、剑士近身冲锋、炮兵超远重击。针对不同敌人合理选择掩体和战术。</li>
+            <li><span class="rules-highlight">购买阶段</span>：每波击杀全部敌人后进入<span class="rules-highlight">30秒购买阶段</span>（倒计时仅ESC暂停时暂停），期间无敌人刷新，按<span class="rules-highlight">B键</span>打开战术商店购买武器、消耗品和装备。</li>
+            <li><span class="rules-highlight">战术商店</span>：购买阶段使用<span class="rules-highlight">本局金币</span>购买物品。武器/装备购买后永久生效（重启或失败不重置）；消耗品可无限次购买（金币足够时）。</li>
+            <li><span class="rules-highlight">局外商店</span>：游戏开始界面的商店使用<span class="rules-highlight">总金币</span>预购，购买的武器/装备在当局游戏开始时生效。</li>
+            <li><span class="rules-highlight">武器系统</span>：玩家永久持有武器（最多<span class="rules-highlight">3把</span>），可在背包（E键）中点击切换，或按<span class="rules-highlight">1 / 2 / 3</span>快速切换。可用武器：M4A1（伤害25/弹匣30）、AK-47（伤害30/弹匣30）、MP5（伤害18/弹匣40）、AWP（伤害100/弹匣10）。</li>
+            <li><span class="rules-highlight">装备系统</span>：头盔减少头部伤害（1级15%/2级25%），防弹衣减少身体伤害（1级20%/2级35%）。装备购买后永久生效，1级可升级到2级，2级不可降级。</li>
+            <li><span class="rules-highlight">背包系统</span>：按E键打开背包，可查看角色状态、武器栏、消耗品、装备防护、弹药储备和任务统计。背包内含<span class="rules-highlight">储物空间</span>（10格），装备类每格1件、消耗品类每格堆叠64个。点击储物格中的装备可<span class="rules-highlight">穿戴</span>，点击已装备的装备槽可<span class="rules-highlight">脱下</span>放回储物空间。</li>
+            <li><span class="rules-highlight">消耗品系统</span>：打开背包点击消耗品或按功能键快捷使用：按<span class="rules-highlight">F1</span>使用加速剂（移动速度提升60%，持续10秒），按<span class="rules-highlight">F2</span>使用强化弹（伤害提升100%，持续15秒），按<span class="rules-highlight">F3</span>使用急救包（恢复50点生命值）。初始携带：急救包×3、强化弹×2、加速剂×1。</li>
+            <li><span class="rules-highlight">弹药管理</span>：弹匣容量因武器而异（10-40发），备弹上限240发。波次间自动补充60发备弹。</li>
             <li><span class="rules-highlight">生命恢复</span>：每波结束后恢复25点生命值。</li>
-            <li><span class="rules-highlight">移动系统</span>：空格键跳跃可躲避敌人攻击，也可攀爬越过低矮障碍物；CTRL冲刺大幅提升移动速度；SHIFT潜行降低移动噪音。</li>
+            <li><span class="rules-highlight">移动系统</span>：空格键跳跃可躲避敌人攻击，也可攀爬越过低矮障碍物；CTRL冲刺大幅提升移动速度；SHIFT潜行降低移动噪音。开镜时移动速度降为50%。</li>
             <li><span class="rules-highlight">瞄准镜</span>：右键开镜可提高射击精度，视野会放大。</li>
-            <li><span class="rules-highlight">掩体系统</span>：场景中的障碍物可阻挡敌人攻击与子弹，善用掩体保护自己。</li>
+            <li><span class="rules-highlight">掩体系统</span>：场景中的障碍物可阻挡敌人攻击与子弹，玩家与敌人均无法穿越障碍物，善用掩体保护自己。</li>
             <li><span class="rules-highlight">战术地图</span>：按M键展开卫星大地图，滚轮可缩放，实时掌握全局态势与敌人分布。</li>
-            <li><span class="rules-highlight">武器系统</span>：玩家永久持有武器（最多3把），可在背包（E键）中查看并点击切换，或按<span class="rules-highlight">1 / 2 / 3</span>快速切换。</li>
-            <li><span class="rules-highlight">消耗品系统</span>：打开背包（E键）点击消耗品或按功能键快捷使用：按<span class="rules-highlight">F1</span>使用加速剂（移动速度提升60%，持续10秒），按<span class="rules-highlight">F2</span>使用强化弹（伤害提升100%，持续15秒），按<span class="rules-highlight">F3</span>使用急救包（恢复50点生命值）。</li>
             <li><span class="rules-highlight">子弹视线检测</span>：敌人发射的子弹会被障碍物阻挡，利用掩体可以免疫来自特定方向的攻击。</li>
           </ul>
         </div>
@@ -1287,6 +1323,7 @@ const Player = {
   jumpSpeed: 9,
   gravity: 22,
   baseY: 1.7,
+  height: 1.8,
   isSneaking: false,
   isRunning: false,
   jumpCount: 0,
@@ -1483,6 +1520,12 @@ const Weapon = {
   cameraRecoil: 0,
   muzzleFlashTime: 0,
   reloadAnimPhase: 0,
+  // 换枪动画状态
+  isSwitching: false,
+  switchStartTime: 0,
+  switchDuration: 650, // 换枪总时长(ms)
+  switchPendingStyle: null, // 动画中点要切换的武器样式
+  switchPendingIndex: -1,
 };
 
 const Consumables = {
@@ -1576,6 +1619,93 @@ const PermanentWeapons = {
 };
 PermanentWeapons.list = PermanentWeapons.load();
 
+// ===== 永久装备系统（购买后永久保存，可升级不可降级） =====
+const PermanentEquipment = {
+  EQUIP_DEFS: {
+    helmet1: { id: 'helmet1', name: '1级头盔', slot: 'helmet', level: 1, type: 'equipment', desc: '减少15%头部伤害', icon: '&#x1F9E2;' },
+    helmet2: { id: 'helmet2', name: '2级头盔', slot: 'helmet', level: 2, type: 'equipment', desc: '减少25%头部伤害', icon: '&#x1F9E2;' },
+    armor1:  { id: 'armor1',  name: '1级防弹衣', slot: 'armor', level: 1, type: 'equipment', desc: '减少20%身体伤害', icon: '&#x1F9BA;' },
+    armor2:  { id: 'armor2',  name: '2级防弹衣', slot: 'armor', level: 2, type: 'equipment', desc: '减少35%身体伤害', icon: '&#x1F9BA;' },
+  },
+  data: { helmet: 0, armor: 0 }, // 0=无, 1=一级, 2=二级
+  load() {
+    try {
+      const saved = JSON.parse(localStorage.getItem('game_perm_equipment') || 'null');
+      if (saved && typeof saved.helmet === 'number' && typeof saved.armor === 'number') return saved;
+    } catch (e) {}
+    return { helmet: 0, armor: 0 };
+  },
+  save() { localStorage.setItem('game_perm_equipment', JSON.stringify(this.data)); },
+  has(slot, level) { return this.data[slot] >= level; },
+  canBuy(item) {
+    // 已拥有同级或更高 → 不能购买（不能降级）
+    if (this.data[item.slot] >= item.level) return false;
+    return true;
+  },
+  purchase(item) {
+    if (!this.canBuy(item)) return false;
+    this.data[item.slot] = item.level;
+    this.save();
+    return true;
+  },
+};
+PermanentEquipment.data = PermanentEquipment.load();
+
+// ===== 储物空间系统 =====
+const Storage = {
+  slots: [], // [{ id, name, type, count, maxCount, icon, slot, level }]
+  maxSlots: 10,
+  // 物品最大堆叠规则：装备类=1，消耗品类=64
+  getMaxCount(item) {
+    if (item.type === 'equipment') return 1;
+    return 64;
+  },
+  // 添加物品到储物空间
+  addItem(item, count = 1) {
+    const maxCount = this.getMaxCount(item);
+    // 尝试堆叠到已有格子
+    if (maxCount > 1) {
+      for (let s of this.slots) {
+        if (s.id === item.id && s.count < maxCount) {
+          const space = maxCount - s.count;
+          const add = Math.min(space, count);
+          s.count += add;
+          count -= add;
+          if (count <= 0) return true;
+        }
+      }
+    }
+    // 创建新格子
+    while (count > 0 && this.slots.length < this.maxSlots) {
+      const add = Math.min(maxCount, count);
+      this.slots.push({
+        id: item.id, name: item.name, type: item.type,
+        count: add, maxCount, icon: item.icon || '',
+        slot: item.slot || null, level: item.level || null,
+        desc: item.desc || '',
+      });
+      count -= add;
+    }
+    return count <= 0;
+  },
+  // 从储物空间移除物品
+  removeItem(id, count = 1) {
+    let remaining = count;
+    for (let i = this.slots.length - 1; i >= 0; i--) {
+      if (this.slots[i].id === id) {
+        const take = Math.min(this.slots[i].count, remaining);
+        this.slots[i].count -= take;
+        remaining -= take;
+        if (this.slots[i].count <= 0) this.slots.splice(i, 1);
+        if (remaining <= 0) break;
+      }
+    }
+    return remaining <= 0;
+  },
+  // 查找指定id的物品
+  findItem(id) { return this.slots.find(s => s.id === id); },
+};
+
 // 本局携带武器（从永久持有中取前3把）
 let PlayerWeapons = PermanentWeapons.list.slice(0, 3).map(function (id) { return PermanentWeapons.WEAPON_DEFS[id]; });
 // 当前武器索引
@@ -1588,24 +1718,14 @@ let CurrentWeapon = getCurrentWeapon();
 function switchWeapon(index) {
   if (index < 0 || index >= PlayerWeapons.length) return;
   if (index === CurrentWeaponIndex) return;
-  CurrentWeaponIndex = index;
-  CurrentWeapon = getCurrentWeapon();
-  Weapon.damage = CurrentWeapon.damage;
-  Weapon.fireRate = CurrentWeapon.fireRate;
-  Weapon.magSize = CurrentWeapon.magSize;
-  Weapon.magAmmo = CurrentWeapon.magSize;
-  Weapon.isReloading = false;
-  // 重建武器外观
-  rebuildWeaponVisual(CurrentWeapon.style);
-  updateAmmoUI();
-  showConsumableToast('切换到 ' + CurrentWeapon.name, 'buff');
-  const ammoWeapon = document.querySelector('.ammo-weapon');
-  if (ammoWeapon) ammoWeapon.textContent = CurrentWeapon.shortName + ' // ' + CurrentWeapon.name.split(' ').slice(1).join(' ');
-  const bpWName = document.querySelector('.bp-current-weapon-name');
-  if (bpWName) bpWName.textContent = CurrentWeapon.name;
-  const bpWIcon = document.querySelector('.bp-current-weapon-icon');
-  if (bpWIcon) bpWIcon.textContent = CurrentWeapon.icon;
-  renderBackpackWeapons();
+  // 正在换枪或换弹时，忽略新请求
+  if (Weapon.isSwitching) return;
+  // 开始换枪动画
+  Weapon.isSwitching = true;
+  Weapon.switchStartTime = performance.now();
+  Weapon.switchPendingStyle = PlayerWeapons[index].style;
+  Weapon.switchPendingIndex = index;
+  AudioManager.reload();
 }
 
 
@@ -3682,7 +3802,7 @@ function createEnemy(typeKey) {
 
   // 生成位置：确保不在障碍物内
   const enemyRadius = 0.5;
-  let spawnX, spawnZ, spawnOk;
+  let spawnX = 0, spawnZ = 0, spawnOk = false;
   for (let attempt = 0; attempt < 30; attempt++) {
     const angle = Math.random() * Math.PI * 2;
     const dist = 35 + Math.random() * 25;
@@ -3697,6 +3817,24 @@ function createEnemy(typeKey) {
       }
     }
     if (spawnOk) break;
+  }
+  // 30次尝试仍失败：在地图边缘找一个安全位置（远离障碍物）
+  if (!spawnOk) {
+    for (let attempt = 0; attempt < 12; attempt++) {
+      const edgeAngle = (attempt / 12) * Math.PI * 2;
+      const edgeDist = 70;
+      const ex = Math.cos(edgeAngle) * edgeDist;
+      const ez = Math.sin(edgeAngle) * edgeDist;
+      let safe = true;
+      for (const obs of Game.obstacles) {
+        if (ex + enemyRadius > obs.min.x && ex - enemyRadius < obs.max.x &&
+            ez + enemyRadius > obs.min.z && ez - enemyRadius < obs.max.z) {
+          safe = false;
+          break;
+        }
+      }
+      if (safe) { spawnX = ex; spawnZ = ez; spawnOk = true; break; }
+    }
   }
   enemy.position.set(spawnX, 0, spawnZ);
   enemy.userData = {
@@ -3744,8 +3882,11 @@ function updateDyingEnemies(dt) {
       const p = t / 0.12;
       const e = 1 - Math.pow(1 - p, 2.5);
       const kb = 0.35 * intensity;
-      enemy.position.x += ud.knockbackX * kb * dt;
-      enemy.position.z += ud.knockbackZ * kb * dt;
+      // 击退移动需碰撞检测，防止死亡敌人穿墙
+      const kbX = ud.knockbackX * kb * dt;
+      const kbZ = ud.knockbackZ * kb * dt;
+      if (!checkEnemyCollision(enemy.position.x + kbX, enemy.position.z, 0.3)) enemy.position.x += kbX;
+      if (!checkEnemyCollision(enemy.position.x, enemy.position.z + kbZ, 0.3)) enemy.position.z += kbZ;
       const tilt = e * 0.25;
       enemy.rotation.x = -tilt;
       enemy.rotation.z = -ud.knockbackX * tilt * 0.3;
@@ -3763,8 +3904,11 @@ function updateDyingEnemies(dt) {
       const height = Math.sin(p * Math.PI) * 0.2 * intensity;
       enemy.position.y = height;
       const drift = 0.5 * intensity;
-      enemy.position.x += ud.knockbackX * drift * dt;
-      enemy.position.z += ud.knockbackZ * drift * dt;
+      // 漂移移动需碰撞检测，防止死亡敌人穿墙
+      const driftX = ud.knockbackX * drift * dt;
+      const driftZ = ud.knockbackZ * drift * dt;
+      if (!checkEnemyCollision(enemy.position.x + driftX, enemy.position.z, 0.3)) enemy.position.x += driftX;
+      if (!checkEnemyCollision(enemy.position.x, enemy.position.z + driftZ, 0.3)) enemy.position.z += driftZ;
       enemy.rotation.x = -fallRot;
       enemy.rotation.z = 0;
       enemy.rotation.y = ud.deathYaw;
@@ -3853,8 +3997,8 @@ function updateEnemy(enemy, dt) {
     const moveSpeed = ud.speed * dt;
     const newX = enemy.position.x + _tmpDir.x * moveSpeed;
     const newZ = enemy.position.z + _tmpDir.z * moveSpeed;
-    if (!checkPlayerCollision(newX, enemy.position.z, 0.3)) enemy.position.x = newX;
-    if (!checkPlayerCollision(enemy.position.x, newZ, 0.3)) enemy.position.z = newZ;
+    if (!checkEnemyCollision(newX, enemy.position.z, 0.3)) enemy.position.x = newX;
+    if (!checkEnemyCollision(enemy.position.x, newZ, 0.3)) enemy.position.z = newZ;
     ud.walkPhase += dt * 8;
     const swing = Math.sin(ud.walkPhase) * 0.3;
     ud.legL.rotation.x = swing;
@@ -4972,14 +5116,32 @@ function removeEnemy(enemy) {
 }
 
 function checkPlayerCollision(x, z, radius) {
+  // 体积重叠判定：玩家身体Y区间与障碍物Y区间相交才阻挡
+  // 允许玩家跳到障碍物顶部（feetY >= height 时不相交）
+  // 同时防止玩家从侧面跳跃穿越障碍物（只要身体Y与障碍物Y相交就阻挡）
+  // 0.15 容差：站在障碍物顶部时（feetY ≈ obs.height）不阻挡，避免浮点精度导致无法移动
   const playerEyeY = controls.getObject().position.y;
   const playerFeetY = playerEyeY - Player.baseY;
+  const playerHeadY = playerFeetY + Player.height;
   for (const obs of Game.obstacles) {
     if (x + radius > obs.min.x && x - radius < obs.max.x &&
         z + radius > obs.min.z && z - radius < obs.max.z) {
-      if (playerFeetY < obs.height - 0.1) {
+      // XZ 重叠，检查 Y 是否重叠（玩家身体与障碍物是否有交集）
+      if (playerFeetY < obs.height - 0.15 && playerHeadY > 0) {
         return true;
       }
+    }
+  }
+  return false;
+}
+
+// 敌人专用碰撞检测：纯 XZ 平面检测，不考虑 Y 轴（敌人不攀爬障碍物）
+// 避免复用 checkPlayerCollision 导致玩家跳跃时敌人穿墙
+function checkEnemyCollision(x, z, radius) {
+  for (const obs of Game.obstacles) {
+    if (x + radius > obs.min.x && x - radius < obs.max.x &&
+        z + radius > obs.min.z && z - radius < obs.max.z) {
+      return true;
     }
   }
   return false;
@@ -5075,6 +5237,7 @@ function shoot() {
   const now = performance.now();
   if (now - Weapon.lastShot < Weapon.fireRate) return;
   if (Weapon.isReloading) return;
+  if (Weapon.isSwitching) return;
   if (Weapon.magAmmo <= 0) { showReloadHint(); return; }
   Weapon.lastShot = now;
   Weapon.magAmmo--;
@@ -5250,6 +5413,81 @@ function updateReload(dt) {
   }
 }
 
+// 换枪动画：下沉→侧翻→切换→回升→回正
+// 阶段1 (0-35%)：武器下沉并右翻
+// 阶段2 (35-50%)：武器在低位完成切换（重建模型）
+// 阶段3 (50-100%)：武器回升并回正
+function updateWeaponSwitch(dt) {
+  if (!Weapon.isSwitching || !weaponGroup) return;
+  const elapsed = performance.now() - Weapon.switchStartTime;
+  const progress = elapsed / Weapon.switchDuration;
+  const hy = weaponHome.y;
+  const hx = weaponHome.x;
+  const hz = weaponHome.z;
+
+  if (progress < 0.35) {
+    // 阶段1：下沉 + 右翻
+    const p = progress / 0.35;
+    const ease = p * p; // 加速下沉
+    weaponGroup.position.y = hy - 0.35 * ease;
+    weaponGroup.position.x = hx + 0.08 * ease;
+    weaponGroup.position.z = hz + 0.12 * ease;
+    weaponGroup.rotation.x = 0.6 * ease;
+    weaponGroup.rotation.y = weaponHome.rotY + 0.8 * ease;
+    weaponGroup.rotation.z = -0.5 * ease;
+  } else if (progress < 0.5) {
+    // 阶段2：低位切换武器
+    if (Weapon.switchPendingStyle !== null) {
+      // 应用新武器数据
+      const idx = Weapon.switchPendingIndex;
+      CurrentWeaponIndex = idx;
+      CurrentWeapon = getCurrentWeapon();
+      Weapon.damage = CurrentWeapon.damage;
+      Weapon.fireRate = CurrentWeapon.fireRate;
+      Weapon.magSize = CurrentWeapon.magSize;
+      Weapon.magAmmo = CurrentWeapon.magSize;
+      Weapon.isReloading = false;
+      // 重建武器外观
+      rebuildWeaponVisual(CurrentWeapon.style);
+      updateAmmoUI();
+      showConsumableToast('切换到 ' + CurrentWeapon.name, 'buff');
+      const ammoWeapon = document.querySelector('.ammo-weapon');
+      if (ammoWeapon) ammoWeapon.textContent = CurrentWeapon.shortName + ' // ' + CurrentWeapon.name.split(' ').slice(1).join(' ');
+      const bpWName = document.querySelector('.bp-current-weapon-name');
+      if (bpWName) bpWName.textContent = CurrentWeapon.name;
+      const bpWIcon = document.querySelector('.bp-current-weapon-icon');
+      if (bpWIcon) bpWIcon.textContent = CurrentWeapon.icon;
+      renderBackpackWeapons();
+      Weapon.switchPendingStyle = null; // 标记已切换
+    }
+    // 保持低位
+    weaponGroup.position.y = hy - 0.35;
+    weaponGroup.position.x = hx + 0.08;
+    weaponGroup.position.z = hz + 0.12;
+    weaponGroup.rotation.x = 0.6;
+    weaponGroup.rotation.y = weaponHome.rotY + 0.8;
+    weaponGroup.rotation.z = -0.5;
+  } else {
+    // 阶段3：回升回正
+    const p = (progress - 0.5) / 0.5;
+    const ease = 1 - (1 - p) * (1 - p); // 减速回升
+    weaponGroup.position.y = (hy - 0.35) + 0.35 * ease;
+    weaponGroup.position.x = (hx + 0.08) - 0.08 * ease;
+    weaponGroup.position.z = (hz + 0.12) - 0.12 * ease;
+    weaponGroup.rotation.x = 0.6 * (1 - ease);
+    weaponGroup.rotation.y = weaponHome.rotY + 0.8 * (1 - ease);
+    weaponGroup.rotation.z = -0.5 * (1 - ease);
+  }
+
+  if (elapsed >= Weapon.switchDuration) {
+    Weapon.isSwitching = false;
+    weaponGroup.position.set(hx, hy, hz);
+    weaponGroup.rotation.x = 0;
+    weaponGroup.rotation.y = weaponHome.rotY;
+    weaponGroup.rotation.z = 0;
+  }
+}
+
 function showReloadHint() {
   $('ammo-reload').classList.add('show');
   $('ammo-reload').textContent = '弹匣已空 — 换弹！';
@@ -5327,27 +5565,135 @@ const shopContent = $('shop-content');
 const shopCoinsEl = $('shop-coins');
 let shopCurrentTab = 'weapons';
 
+// 统一SVG图标系统：反映物品真实外观，局内局外商店共用
+function getItemIconSVG(item) {
+  const id = item.id;
+  // ---- 武器：侧视图轮廓，反映各枪型特征 ----
+  if (id === 'm4a1') {
+    // M4A1 战术卡宾枪：黑色金属，战术导轨，中等长度
+    return `<svg viewBox="0 0 64 24" width="100%" height="100%" style="max-height:32px" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="9" width="9" height="5" rx="1" fill="#2a2a2a"/><rect x="10" y="8" width="38" height="8" rx="1" fill="#333"/>
+      <rect x="48" y="9.5" width="14" height="3" fill="#1a1a1a"/><rect x="14" y="16" width="6" height="6" rx="1" fill="#222"/>
+      <rect x="20" y="6" width="10" height="2" fill="#555"/><rect x="23" y="5" width="2" height="2" fill="#888"/>
+      <rect x="44" y="7" width="3" height="2" fill="#555"/><line x1="50" y1="11" x2="60" y2="11" stroke="#555" stroke-width="0.5"/>
+    </svg>`;
+  }
+  if (id === 'ak47') {
+    // AK-47：木质枪身(棕红)，标志性弯弹匣
+    return `<svg viewBox="0 0 64 24" width="100%" height="100%" style="max-height:32px" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="9" width="10" height="5" rx="1" fill="#4a2a12"/><rect x="11" y="8" width="37" height="7" rx="1" fill="#5a3a22"/>
+      <rect x="48" y="9.5" width="14" height="3" fill="#1a1a1a"/><path d="M16 15 L18 22 L25 22 L23 15 Z" fill="#1a1a1a"/>
+      <rect x="22" y="6" width="6" height="2" fill="#333"/><rect x="24" y="4" width="2" height="3" fill="#444"/>
+      <rect x="44" y="7" width="3" height="2" fill="#3a2a1a"/>
+    </svg>`;
+  }
+  if (id === 'mp5') {
+    // MP5 冲锋枪：紧凑黑色，短枪管，银色瞄具点缀
+    return `<svg viewBox="0 0 64 24" width="100%" height="100%" style="max-height:32px" xmlns="http://www.w3.org/2000/svg">
+      <rect x="6" y="9" width="10" height="5" rx="1" fill="#202430"/><rect x="15" y="8" width="27" height="7" rx="1" fill="#2a2a35"/>
+      <rect x="42" y="9.5" width="10" height="3" fill="#1a1a1a"/><rect x="18" y="15" width="5" height="7" rx="1" fill="#252530"/>
+      <rect x="24" y="6" width="5" height="2" fill="#a8a8b0"/><circle cx="26.5" cy="7" r="0.8" fill="#c0c0c8"/>
+      <rect x="36" y="7" width="3" height="2" fill="#555"/>
+    </svg>`;
+  }
+  if (id === 'awp') {
+    // AWP 狙击枪：长枪管，大瞄准镜，深绿色
+    return `<svg viewBox="0 0 64 24" width="100%" height="100%" style="max-height:32px" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="9" width="8" height="5" rx="1" fill="#1a2820"/><rect x="9" y="9" width="35" height="6" rx="1" fill="#2a3830"/>
+      <rect x="44" y="10" width="18" height="2.5" fill="#0a0a0a"/><rect x="15" y="15" width="5" height="5" rx="1" fill="#1a2820"/>
+      <rect x="17" y="4" width="18" height="3.5" rx="1" fill="#3a4840"/><circle cx="19" cy="5.5" r="1.3" fill="#0a0a0a"/>
+      <circle cx="33" cy="5.5" r="1" fill="#0a0a0a"/><rect x="22" y="7.5" width="2" height="1.5" fill="#555"/>
+      <rect x="28" y="7.5" width="2" height="1.5" fill="#555"/>
+    </svg>`;
+  }
+  // ---- 弹药补给 ----
+  if (id === 'ammo60' || id === 'ammo120') {
+    const count = id === 'ammo60' ? '60' : '120';
+    return `<svg viewBox="0 0 48 32" width="100%" height="100%" style="max-height:36px" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="3" width="8" height="5" rx="1" fill="#5a4830"/>
+      <rect x="4" y="8" width="40" height="20" rx="2" fill="#4a3820" stroke="#6a5030" stroke-width="1"/>
+      <rect x="8" y="12" width="32" height="2.5" fill="#3a2810"/><rect x="8" y="16.5" width="32" height="2.5" fill="#3a2810"/>
+      <rect x="8" y="21" width="32" height="2.5" fill="#3a2810"/>
+      <text x="24" y="20" font-size="7" fill="#ffd700" text-anchor="middle" font-family="Orbitron,sans-serif" font-weight="bold">${count}</text>
+    </svg>`;
+  }
+  // ---- 消耗品 ----
+  if (id === 'medkit') {
+    return `<svg viewBox="0 0 48 32" width="100%" height="100%" style="max-height:36px" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="5" width="8" height="4" rx="1" fill="#b0b0b0"/>
+      <rect x="6" y="9" width="36" height="19" rx="2" fill="#e8e8e8" stroke="#b8b8b8" stroke-width="1"/>
+      <rect x="22" y="14" width="4" height="10" fill="#d03030"/><rect x="19" y="17" width="10" height="4" fill="#d03030"/>
+    </svg>`;
+  }
+  if (id === 'enhancedAmmo') {
+    return `<svg viewBox="0 0 48 32" width="100%" height="100%" style="max-height:36px" xmlns="http://www.w3.org/2000/svg">
+      <rect x="14" y="6" width="20" height="9" rx="1" fill="#c8a020"/>
+      <rect x="14" y="15" width="20" height="12" rx="1" fill="#8a6a10"/>
+      <rect x="18" y="8" width="2" height="5" fill="#ffd700"/>
+      <circle cx="24" cy="10" r="3" fill="#ffe040" opacity="0.5"/>
+      <path d="M22 10 L26 10 L24 14 L27 14 L21 22 L23 15 L20 15 Z" fill="#ffe040" opacity="0.8"/>
+    </svg>`;
+  }
+  if (id === 'accelerator') {
+    return `<svg viewBox="0 0 48 32" width="100%" height="100%" style="max-height:36px" xmlns="http://www.w3.org/2000/svg">
+      <rect x="18" y="3" width="12" height="4" rx="1" fill="#1a6a3a"/>
+      <path d="M14 7 L34 7 L32 18 L16 18 Z" fill="#2a8a4a"/>
+      <path d="M22 9 L27 9 L24 13 L28 13 L21 21 L24 14 L20 14 Z" fill="#5ce0a0"/>
+      <rect x="16" y="18" width="16" height="3" fill="#1a6a3a"/>
+    </svg>`;
+  }
+  // ---- 装备：头盔/防弹衣 ----
+  if (id === 'helmet1') {
+    return `<svg viewBox="0 0 48 32" width="100%" height="100%" style="max-height:36px" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 23 Q9 7 24 7 Q39 7 39 23 L39 27 L9 27 Z" fill="#3a3a44" stroke="#2a2a30" stroke-width="1"/>
+      <rect x="17" y="16" width="14" height="7" rx="1" fill="#1a1a20"/>
+      <rect x="23" y="9" width="2" height="6" fill="#555"/>
+      <text x="24" y="15" font-size="7" fill="#aaa" text-anchor="middle" font-family="Orbitron,sans-serif" font-weight="bold">1</text>
+    </svg>`;
+  }
+  if (id === 'helmet2') {
+    return `<svg viewBox="0 0 48 32" width="100%" height="100%" style="max-height:36px" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7 23 Q7 5 24 5 Q41 5 41 23 L41 28 L7 28 Z" fill="#4a4a54" stroke="#3a3a40" stroke-width="1"/>
+      <rect x="15" y="15" width="18" height="8" rx="1" fill="#1a1a20"/>
+      <rect x="9" y="12" width="30" height="2" fill="#6a6a70"/>
+      <rect x="23" y="7" width="2" height="5" fill="#6a6a70"/>
+      <text x="24" y="14" font-size="7" fill="#ffd700" text-anchor="middle" font-family="Orbitron,sans-serif" font-weight="bold">2</text>
+    </svg>`;
+  }
+  if (id === 'armor1') {
+    return `<svg viewBox="0 0 48 32" width="100%" height="100%" style="max-height:36px" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14 6 L34 6 L36 13 L34 26 L14 26 L12 13 Z" fill="#3a3a44" stroke="#2a2a30" stroke-width="1"/>
+      <rect x="22" y="9" width="4" height="17" fill="#2a2a30"/>
+      <text x="24" y="20" font-size="8" fill="#aaa" text-anchor="middle" font-family="Orbitron,sans-serif" font-weight="bold">1</text>
+    </svg>`;
+  }
+  if (id === 'armor2') {
+    return `<svg viewBox="0 0 48 32" width="100%" height="100%" style="max-height:36px" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 5 L36 5 L38 13 L36 27 L12 27 L10 13 Z" fill="#4a4a54" stroke="#3a3a40" stroke-width="1"/>
+      <rect x="22" y="8" width="4" height="19" fill="#2a2a30"/>
+      <rect x="13" y="13" width="8" height="6" rx="1" fill="#5a5a64"/><rect x="27" y="13" width="8" height="6" rx="1" fill="#5a5a64"/>
+      <text x="24" y="22" font-size="8" fill="#ffd700" text-anchor="middle" font-family="Orbitron,sans-serif" font-weight="bold">2</text>
+    </svg>`;
+  }
+  return '<svg viewBox="0 0 48 32" width="100%" height="100%" style="max-height:32px"><rect x="8" y="8" width="32" height="20" rx="2" fill="#333" stroke="#555"/></svg>';
+}
+
 function getShopItemIcon(item) {
-  if (item.type === 'weapon') return '&#x1F528;';
-  if (item.type === 'ammo') return '&#x1F4A3;';
-  if (item.id === 'medkit') return '&#x2695;';
-  if (item.id === 'enhancedAmmo') return '&#x1F4A0;';
-  if (item.id === 'accelerator') return '&#x26A1;';
-  if (item.slot === 'helmet') return '&#x1F9E2;';
-  if (item.slot === 'armor') return '&#x1F9BA;';
-  return '&#x1F3F7;';
+  return getItemIconSVG(item);
 }
 
 function isShopItemPurchased(item) {
   if (item.type === 'weapon') return PermanentWeapons.has(item.id);
-  if (item.type === 'ammo') return PreGamePurchases.ammo >= item.amount;
-  if (item.type === 'consumable') return (PreGamePurchases.consumables[item.id] || 0) > 0;
-  if (item.type === 'equipment') return (PreGamePurchases.equipment[item.slot] || 0) >= item.level;
+  if (item.type === 'ammo') return false; // 弹药可重复购买
+  if (item.type === 'consumable') return false; // 消耗品可无限购买
+  if (item.type === 'equipment') return PermanentEquipment.has(item.slot, item.level);
   return false;
 }
 
 function renderShopTab(tab) {
   shopCurrentTab = tab;
+  // 确保金币始终显示
+  if (shopCoinsEl) shopCoinsEl.textContent = Game.coins;
   document.querySelectorAll('.shop-tab').forEach(t => {
     t.classList.toggle('active', t.dataset.shopTab === tab);
   });
@@ -5359,12 +5705,25 @@ function renderShopTab(tab) {
   items.forEach((item, idx) => {
     const purchased = isShopItemPurchased(item);
     const icon = getShopItemIcon(item);
-    html += `<div class="shop-card ${purchased ? 'purchased' : ''}" data-id="${item.id}" data-tab="${tab}" style="opacity:0;animation:shopCardIn .4s ease-out ${0.1 + idx * 0.06}s forwards">
+    // 装备：检查是否已拥有更高级（不可降级）
+    let badge = '';
+    let cardClass = purchased ? 'purchased' : '';
+    if (item.type === 'equipment') {
+      const currentLevel = PermanentEquipment.data[item.slot];
+      if (currentLevel >= item.level) {
+        badge = currentLevel > item.level ? '<div class="shop-card-badge" style="color:var(--muted)">已拥有更高级</div>' : '<div class="shop-card-badge">已拥有</div>';
+      } else if (currentLevel > 0 && currentLevel < item.level) {
+        badge = '<div class="shop-card-badge" style="color:#5ce0a0">可升级</div>';
+      }
+    } else if (purchased) {
+      badge = '<div class="shop-card-badge">已购买</div>';
+    }
+    html += `<div class="shop-card ${cardClass}" data-id="${item.id}" data-tab="${tab}" style="opacity:0;animation:shopCardIn .4s ease-out ${0.1 + idx * 0.06}s forwards">
       <div class="shop-card-icon">${icon}</div>
       <div class="shop-card-name">${item.name}</div>
       <div class="shop-card-desc">${item.desc}</div>
       <div class="shop-card-price">&#x1FA99; ${item.price}</div>
-      ${purchased ? '<div class="shop-card-badge">已购买</div>' : ''}
+      ${badge}
     </div>`;
   });
   const need = 6 - items.length;
@@ -5383,16 +5742,24 @@ function buyShopItem(itemId, tab) {
   if (tab === 'weapons') items = items.concat(ShopItems.ammo || []);
   const item = items.find(i => i.id === itemId);
   if (!item) return;
-  if (isShopItemPurchased(item)) return;
-  // 武器限购：永久持有已满3把，不允许再买
-  if (item.type === 'weapon' && PermanentWeapons.list.length >= 3) {
-    showConsumableToast('武器栏已满（最多3把）', 'warn');
-    const coinsEl = document.querySelector('.shop-coins-display');
-    if (coinsEl) { coinsEl.classList.remove('pulse'); void coinsEl.offsetWidth; coinsEl.classList.add('pulse'); }
-    return;
+  // 武器：已拥有或栏满
+  if (item.type === 'weapon') {
+    if (PermanentWeapons.has(item.id)) return;
+    if (PermanentWeapons.list.length >= 3) {
+      showConsumableToast('武器栏已满（最多3把）', 'warn');
+      return;
+    }
   }
+  // 装备：已拥有同级或更高 → 不可购买（不可降级）
+  if (item.type === 'equipment') {
+    if (!PermanentEquipment.canBuy(item)) {
+      showConsumableToast('已拥有同级或更高级装备', 'warn');
+      return;
+    }
+  }
+  // 金币不足提示
   if (Game.coins < item.price) {
-    showConsumableToast('金币不足', 'warn');
+    showGoldWarn();
     const coinsEl = document.querySelector('.shop-coins-display');
     if (coinsEl) { coinsEl.classList.remove('pulse'); void coinsEl.offsetWidth; coinsEl.classList.add('pulse'); }
     return;
@@ -5413,7 +5780,7 @@ function buyShopItem(itemId, tab) {
       PreGamePurchases.consumables[item.id] = (PreGamePurchases.consumables[item.id] || 0) + item.amount;
       break;
     case 'equipment':
-      PreGamePurchases.equipment[item.slot] = item.level;
+      PermanentEquipment.purchase(item);
       break;
   }
   showConsumableToast('购买 ' + item.name, 'buff');
@@ -5456,12 +5823,9 @@ function applyPreGamePurchases() {
       Consumables[id] = (Consumables[id] || 0) + PreGamePurchases.consumables[id];
     }
   }
-  // 装备
-  for (const slot in PreGamePurchases.equipment) {
-    if (PreGamePurchases.equipment[slot] > 0) {
-      Equipment[slot] = PreGamePurchases.equipment[slot];
-    }
-  }
+  // 装备：从永久装备系统加载
+  Equipment.helmet = PermanentEquipment.data.helmet;
+  Equipment.armor = PermanentEquipment.data.armor;
   // 清空局外购买记录
   PreGamePurchases.weapon = null;
   PreGamePurchases.ammo = 0;
@@ -5494,6 +5858,8 @@ function toggleInshop() {
 
 function renderInshopTab(tab) {
   inshopCurrentTab = tab;
+  // 确保金币始终显示
+  if (inshopCoinsEl) inshopCoinsEl.textContent = Game.sessionCoins;
   // 更新选项卡状态
   document.querySelectorAll('.inshop-tab').forEach(t => {
     t.classList.toggle('active', t.dataset.tab === tab);
@@ -5503,12 +5869,26 @@ function renderInshopTab(tab) {
   items.forEach(item => {
     const owned = checkItemOwned(item);
     const icon = getItemIcon(item);
-    html += `<div class="inshop-item ${owned ? 'owned' : ''}" data-id="${item.id}" data-tab="${tab}">
+    // 装备：显示状态
+    let badge = '';
+    let itemClass = owned ? 'owned' : '';
+    if (item.type === 'equipment') {
+      const permLevel = PermanentEquipment.data[item.slot];
+      if (permLevel >= item.level) {
+        itemClass = 'owned';
+        badge = permLevel > item.level ? '<div class="inshop-item-owned">已拥有更高级</div>' : '<div class="inshop-item-owned">已拥有</div>';
+      } else if (permLevel > 0 && permLevel < item.level) {
+        badge = '<div class="inshop-item-owned" style="color:#5ce0a0">可升级</div>';
+      }
+    } else if (owned) {
+      badge = '<div class="inshop-item-owned">已拥有</div>';
+    }
+    html += `<div class="inshop-item ${itemClass}" data-id="${item.id}" data-tab="${tab}">
       <div class="inshop-item-icon">${icon}</div>
       <div class="inshop-item-name">${item.name}</div>
       <div class="inshop-item-desc">${item.desc}</div>
       <div class="inshop-item-price">&#x1FA99; ${item.price}</div>
-      ${owned ? '<div class="inshop-item-owned">已拥有</div>' : ''}
+      ${badge}
     </div>`;
   });
   html += '</div>';
@@ -5520,32 +5900,40 @@ function renderInshopTab(tab) {
 }
 
 function checkItemOwned(item) {
-  if (item.type === 'weapon') return CurrentWeapon.id === item.id;
-  if (item.type === 'equipment') return Equipment[item.slot] >= item.level;
+  if (item.type === 'weapon') return PermanentWeapons.has(item.id);
+  if (item.type === 'equipment') return PermanentEquipment.has(item.slot, item.level);
   return false;
 }
 
 function getItemIcon(item) {
-  const icons = {
-    ak47: '&#x1F52B;', mp5: '&#x1F52B;', awp: '&#x1F52B;',
-    ammo60: '&#x1F4E5;', ammo120: '&#x1F4E5;',
-    medkit: '&#x2764;', enhancedAmmo: '&#x2694;', accelerator: '&#x26A1;',
-    helmet1: '&#x1F3A9;', helmet2: '&#x1F3A9;', armor1: '&#x1F6E1;', armor2: '&#x1F6E1;',
-  };
-  return icons[item.id] || '&#x1F4E6;';
+  return getItemIconSVG(item);
 }
 
 function buyItem(itemId, tab) {
   const items = ShopItems[tab] || [];
   const item = items.find(i => i.id === itemId);
   if (!item) return;
-  if (Game.sessionCoins < item.price) {
-    showConsumableToast('本局金币不足', 'warn');
-    return;
+  // 装备：已拥有同级或更高 → 不可购买
+  if (item.type === 'equipment') {
+    if (!PermanentEquipment.canBuy(item)) {
+      showConsumableToast('已拥有同级或更高级装备', 'warn');
+      return;
+    }
   }
-  // 已拥有的武器或装备不可重复购买
-  if (checkItemOwned(item)) {
-    showConsumableToast('已拥有此物品', 'warn');
+  // 武器：已拥有不可重复购买；武器栏满也不可购买
+  if (item.type === 'weapon') {
+    if (PermanentWeapons.has(item.id)) {
+      showConsumableToast('已拥有此武器', 'warn');
+      return;
+    }
+    if (PermanentWeapons.list.length >= 3) {
+      showConsumableToast('武器栏已满（最多3把）', 'warn');
+      return;
+    }
+  }
+  // 金币不足提示
+  if (Game.sessionCoins < item.price) {
+    showGoldWarn();
     return;
   }
   // 扣除本局金币，同时同步扣除总金币（保证两部分一致）
@@ -5556,6 +5944,9 @@ function buyItem(itemId, tab) {
   // 应用购买效果
   switch (item.type) {
     case 'weapon':
+      // 永久保存武器，局外局内同步
+      PermanentWeapons.add(item.id);
+      PlayerWeapons = PermanentWeapons.list.slice(0, 3).map(function (id) { return PermanentWeapons.WEAPON_DEFS[id]; });
       CurrentWeapon.id = item.id;
       CurrentWeapon.name = item.name;
       CurrentWeapon.damage = item.damage;
@@ -5565,6 +5956,10 @@ function buyItem(itemId, tab) {
       Weapon.fireRate = item.fireRate;
       Weapon.magSize = item.magSize;
       Weapon.magAmmo = item.magSize;
+      // 找到新武器在PlayerWeapons中的索引并切换
+      const newIdx = PlayerWeapons.findIndex(w => w.id === item.id);
+      if (newIdx >= 0) CurrentWeaponIndex = newIdx;
+      rebuildWeaponVisual(CurrentWeapon.style);
       showConsumableToast('装备 ' + item.name, 'buff');
       break;
     case 'ammo':
@@ -5576,6 +5971,7 @@ function buyItem(itemId, tab) {
       showConsumableToast('购买 ' + item.name, 'buff');
       break;
     case 'equipment':
+      PermanentEquipment.purchase(item);
       Equipment[item.slot] = item.level;
       showConsumableToast('装备 ' + item.name, 'buff');
       break;
@@ -5656,25 +6052,121 @@ function toggleBackpack() {
     $('bp-char-armor').textContent = armorVal;
     $('bp-char-weapon-count').textContent = PlayerWeapons.length + ' / 3';
     // 更新装备显示
-    const helmetSlot = $('bp-helmet-slot');
-    const helmetStatus = $('bp-helmet-status');
-    if (Equipment.helmet && Equipment.helmet > 0) {
-      if (helmetSlot) helmetSlot.classList.add('has-level');
-      if (helmetStatus) helmetStatus.innerHTML = '已装备<span class="bp-equip-level">Lv.' + Equipment.helmet + '</span> · ' + Math.round(Equipment.helmetReduction[Equipment.helmet] * 100) + '% 头部减伤';
+    renderEquipmentSlots();
+    // 渲染储物空间
+    renderStorageGrid();
+  }
+}
+
+// 渲染装备槽（含脱下功能）
+function renderEquipmentSlots() {
+  const helmetSlot = $('bp-helmet-slot');
+  const helmetStatus = $('bp-helmet-status');
+  const helmetIconEl = helmetSlot ? helmetSlot.querySelector('.bp-equip-icon') : null;
+  if (Equipment.helmet && Equipment.helmet > 0) {
+    if (helmetSlot) { helmetSlot.classList.add('has-level'); helmetSlot.classList.add('unequippable'); }
+    if (helmetStatus) helmetStatus.innerHTML = '已装备<span class="bp-equip-level">Lv.' + Equipment.helmet + '</span> · ' + Math.round(Equipment.helmetReduction[Equipment.helmet] * 100) + '% 头部减伤';
+    if (helmetIconEl) helmetIconEl.innerHTML = getItemIconSVG({ id: 'helmet' + Equipment.helmet });
+  } else {
+    if (helmetSlot) { helmetSlot.classList.remove('has-level'); helmetSlot.classList.remove('unequippable'); }
+    if (helmetStatus) helmetStatus.innerHTML = '<span class="bp-equip-empty">未装备</span>';
+    if (helmetIconEl) helmetIconEl.innerHTML = '<svg viewBox="0 0 48 32" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="opacity:.25"><path d="M9 23 Q9 7 24 7 Q39 7 39 23 L39 27 L9 27 Z" fill="#555" stroke="#333" stroke-width="1"/></svg>';
+  }
+  const armorSlot = $('bp-armor-slot');
+  const armorStatus = $('bp-armor-status');
+  const armorIconEl = armorSlot ? armorSlot.querySelector('.bp-equip-icon') : null;
+  if (Equipment.armor && Equipment.armor > 0) {
+    if (armorSlot) { armorSlot.classList.add('has-level'); armorSlot.classList.add('unequippable'); }
+    if (armorStatus) armorStatus.innerHTML = '已装备<span class="bp-equip-level">Lv.' + Equipment.armor + '</span> · ' + Math.round(Equipment.armorReduction[Equipment.armor] * 100) + '% 身体减伤';
+    if (armorIconEl) armorIconEl.innerHTML = getItemIconSVG({ id: 'armor' + Equipment.armor });
+  } else {
+    if (armorSlot) { armorSlot.classList.remove('has-level'); armorSlot.classList.remove('unequippable'); }
+    if (armorStatus) armorStatus.innerHTML = '<span class="bp-equip-empty">未装备</span>';
+    if (armorIconEl) armorIconEl.innerHTML = '<svg viewBox="0 0 48 32" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="opacity:.25"><path d="M14 6 L34 6 L36 13 L34 26 L14 26 L12 13 Z" fill="#555" stroke="#333" stroke-width="1"/></svg>';
+  }
+  // 绑定脱下事件
+  if (helmetSlot) helmetSlot.onclick = function() { unequipEquipment('helmet'); };
+  if (armorSlot) armorSlot.onclick = function() { unequipEquipment('armor'); };
+}
+
+// 渲染储物空间格子
+function renderStorageGrid() {
+  const grid = $('bp-storage-grid');
+  if (!grid) return;
+  let html = '';
+  for (let i = 0; i < Storage.maxSlots; i++) {
+    const s = Storage.slots[i];
+    if (s) {
+      const isEquip = s.type === 'equipment' || (s.slot != null && s.level != null);
+      // 统一使用 SVG 图标，根据物品 id 匹配
+      const svgIcon = (s.id && getItemIconSVG({ id: s.id })) || s.icon || '<svg viewBox="0 0 48 32" width="100%" height="100%" style="max-height:24px"><rect x="10" y="8" width="28" height="18" rx="2" fill="#333" stroke="#555"/></svg>';
+      html += `<div class="bp-storage-slot ${isEquip ? 'equippable' : ''}" data-slot-idx="${i}" title="${s.name} ×${s.count}">
+        <div class="bp-ss-icon">${svgIcon}</div>
+        ${s.count > 1 ? '<div class="bp-ss-count">' + s.count + '</div>' : ''}
+      </div>`;
     } else {
-      if (helmetSlot) helmetSlot.classList.remove('has-level');
-      if (helmetStatus) helmetStatus.innerHTML = '<span class="bp-equip-empty">未装备</span>';
-    }
-    const armorSlot = $('bp-armor-slot');
-    const armorStatus = $('bp-armor-status');
-    if (Equipment.armor && Equipment.armor > 0) {
-      if (armorSlot) armorSlot.classList.add('has-level');
-      if (armorStatus) armorStatus.innerHTML = '已装备<span class="bp-equip-level">Lv.' + Equipment.armor + '</span> · ' + Math.round(Equipment.armorReduction[Equipment.armor] * 100) + '% 身体减伤';
-    } else {
-      if (armorSlot) armorSlot.classList.remove('has-level');
-      if (armorStatus) armorStatus.innerHTML = '<span class="bp-equip-empty">未装备</span>';
+      html += `<div class="bp-storage-slot empty" data-slot-idx="${i}"></div>`;
     }
   }
+  grid.innerHTML = html;
+  // 绑定点击事件 - 装备类可穿戴
+  grid.querySelectorAll('.bp-storage-slot.equippable').forEach(el => {
+    el.addEventListener('click', function() {
+      const idx = parseInt(this.dataset.slotIdx, 10);
+      equipFromStorage(idx);
+    });
+  });
+}
+
+// 脱下装备 → 放入储物空间
+function unequipEquipment(slot) {
+  const level = Equipment[slot];
+  if (!level || level <= 0) return;
+  // 构造装备物品信息
+  const equipId = slot + level; // helmet1, armor2, etc.
+  const def = PermanentEquipment.EQUIP_DEFS[equipId];
+  if (!def) return;
+  // 检查储物空间是否有空位
+  if (Storage.slots.length >= Storage.maxSlots && !Storage.findItem(equipId)) {
+    showConsumableToast('储物空间已满', 'warn');
+    return;
+  }
+  // 放入储物空间
+  Storage.addItem(def, 1);
+  // 脱下装备
+  Equipment[slot] = 0;
+  // 更新护甲值
+  const armorVal = (Equipment.helmet || 0) * 10 + (Equipment.armor || 0) * 15;
+  const armorEl = $('bp-char-armor');
+  if (armorEl) armorEl.textContent = armorVal;
+  renderEquipmentSlots();
+  renderStorageGrid();
+  showConsumableToast('脱下 ' + def.name, 'warn');
+}
+
+// 从储物空间穿戴装备
+function equipFromStorage(slotIdx) {
+  const s = Storage.slots[slotIdx];
+  if (!s || (s.type !== 'equipment' && s.slot == null)) return;
+  const slot = s.slot; // 'helmet' or 'armor'
+  const currentLevel = Equipment[slot];
+  // 先从储物空间中移除要穿戴的新装备，释放一个格子
+  Storage.slots.splice(slotIdx, 1);
+  // 如果当前已装备同槽位装备，脱下放入储物空间（现在一定有空位）
+  if (currentLevel > 0) {
+    const currentId = slot + currentLevel;
+    const currentDef = PermanentEquipment.EQUIP_DEFS[currentId];
+    if (currentDef) Storage.addItem(currentDef, 1);
+  }
+  // 穿戴新装备
+  Equipment[slot] = s.level;
+  // 更新护甲值
+  const armorVal = (Equipment.helmet || 0) * 10 + (Equipment.armor || 0) * 15;
+  const armorEl = $('bp-char-armor');
+  if (armorEl) armorEl.textContent = armorVal;
+  renderEquipmentSlots();
+  renderStorageGrid();
+  showConsumableToast('穿戴 ' + s.name, 'buff');
 }
 
 function updateBackpackStats() {
@@ -5709,6 +6201,11 @@ function updateBackpackStats() {
   // 更新角色计数
   const wcEl = $('bp-char-weapon-count');
   if (wcEl) wcEl.textContent = PlayerWeapons.length + ' / 3';
+  // 更新装备和储物空间（如果背包已打开）
+  if (backpackOverlay.classList.contains('active')) {
+    renderEquipmentSlots();
+    renderStorageGrid();
+  }
 }
 
 function useConsumable(type) {
@@ -5763,6 +6260,27 @@ function updateConsumableEffects(dt) {
 
 // 消耗品使用提示
 let consumableToastTimer = null;
+
+// 金币不足提示框（游戏中心正上方）
+let goldWarnTimer = null;
+function showGoldWarn() {
+  let toast = document.getElementById('gold-warn-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'gold-warn-toast';
+    toast.innerHTML = '<span class="gw-icon">&#x26A0;</span><span>金币数量不足</span>';
+    document.body.appendChild(toast);
+  }
+  toast.classList.remove('hide');
+  toast.classList.add('show');
+  toast.style.opacity = '1';
+  if (goldWarnTimer) clearTimeout(goldWarnTimer);
+  goldWarnTimer = setTimeout(() => {
+    toast.classList.remove('show');
+    toast.classList.add('hide');
+    setTimeout(() => { toast.style.opacity = '0'; }, 300);
+  }, 1800);
+}
 function spawnCursorShockwave(x, y) {
   // 主冲击波环
   const sw1 = document.createElement('div');
@@ -5880,7 +6398,9 @@ function spawnNextEnemy() {
 }
 
 function checkWaveComplete() {
-  if (Game.enemiesRemaining <= 0 && Game.waveActive) {
+  // 必须满足：波次进行中 + 场上无敌人 + 所有敌人都已生成完毕
+  // 避免敌人延迟生成期间（800ms间隔）被误判为波次结束
+  if (Game.enemiesRemaining <= 0 && Game.waveActive && spawnedCount >= spawnQueue.length) {
     Game.waveActive = false;
     Game.wave++;
     Player.health = Math.min(Player.maxHealth, Player.health + 25);
@@ -6016,22 +6536,67 @@ function updatePlayer(dt) {
 
   if (Player.isJumping) {
     Player.jumpVelocity -= Player.gravity * dt;
-    playerPos.y += Player.jumpVelocity * dt;
-    const feetY = playerPos.y - Player.baseY;
-    const obsTop = getObstacleTopY(playerPos.x, playerPos.z);
-    const landingY = Math.max(0, obsTop);
-    if (feetY <= landingY && Player.jumpVelocity < 0) {
+    const prevFeetY = playerPos.y - Player.baseY;
+    const nextY = playerPos.y + Player.jumpVelocity * dt;
+    const nextFeetY = nextY - Player.baseY;
+    // 下落时检测目标位置是否会卡入障碍物内部（垂直方向碰撞检测）
+    // 只有玩家中心在障碍物 XZ 范围内、且脚部低于顶部才阻挡
+    let blockedTopY = -Infinity; // 被阻挡的最高障碍物顶部
+    let willBeInside = false;
+    for (const obs of Game.obstacles) {
+      if (playerPos.x > obs.min.x && playerPos.x < obs.max.x &&
+          playerPos.z > obs.min.z && playerPos.z < obs.max.z) {
+        // 目标位置脚部低于顶部、当前脚部高于顶部（从上方落下）→ 应着陆到顶部
+        if (nextFeetY <= obs.height && prevFeetY >= obs.height - 0.01) {
+          if (obs.height > blockedTopY) blockedTopY = obs.height;
+        }
+        // 目标位置脚部低于顶部、当前脚部也低于顶部 → 会卡入内部，必须阻挡
+        else if (nextFeetY < obs.height - 0.05 && prevFeetY < obs.height - 0.05) {
+          willBeInside = true;
+          if (obs.height > blockedTopY) blockedTopY = obs.height;
+        }
+      }
+    }
+    // 下落且会着陆或卡入 → 停在障碍物顶部
+    if (Player.jumpVelocity < 0 && (blockedTopY > -Infinity || willBeInside)) {
+      const landingY = Math.max(0, blockedTopY > -Infinity ? blockedTopY : 0);
       playerPos.y = landingY + Player.baseY;
       Player.isJumping = false;
       Player.jumpVelocity = 0;
       Player.jumpCount = 0;
       Player.canDoubleJump = false;
       jumpIndicator.style.opacity = '0';
+    } else if (!willBeInside) {
+      // 正常垂直移动（上升或下落到地面）
+      playerPos.y = nextY;
+      const feetY = nextFeetY;
+      if (feetY <= 0) {
+        playerPos.y = Player.baseY;
+        Player.isJumping = false;
+        Player.jumpVelocity = 0;
+        Player.jumpCount = 0;
+        Player.canDoubleJump = false;
+        jumpIndicator.style.opacity = '0';
+      }
+    } else {
+      // 上升时卡入障碍物：把玩家推回顶部下方（脚部贴在障碍物底部下方）
+      // 实际上升不会卡入，此处作为兜底：禁止本次垂直移动
+      playerPos.y = prevFeetY + Player.baseY;
+      Player.jumpVelocity = 0;
     }
   } else {
     const feetY = playerPos.y - Player.baseY;
-    const obsTop = getObstacleTopY(playerPos.x, playerPos.z);
-    const groundFeetY = Math.max(0, obsTop);
+    // 地面高度：只在玩家脚部接近障碍物顶部且在障碍物范围内时才站上去
+    // 避免玩家在障碍物旁边走动时被错误抬高或进入跳跃状态
+    let groundFeetY = 0;
+    for (const obs of Game.obstacles) {
+      if (playerPos.x > obs.min.x - 0.3 && playerPos.x < obs.max.x + 0.3 &&
+          playerPos.z > obs.min.z - 0.3 && playerPos.z < obs.max.z + 0.3) {
+        if (obs.height > groundFeetY && Math.abs(feetY - obs.height) < 0.4) {
+          groundFeetY = obs.height;
+        }
+      }
+    }
     if (feetY > groundFeetY + 0.05) {
       Player.isJumping = true;
       Player.jumpVelocity = 0;
@@ -6040,6 +6605,37 @@ function updatePlayer(dt) {
     } else {
       playerPos.y = groundFeetY + Player.baseY;
     }
+  }
+
+  // 防卡墙：检测玩家是否卡在障碍物内部，若是则推出到最近的边缘
+  // 跳跃过程中垂直移动无碰撞检测，可能因浮点误差/帧率波动导致玩家钻入障碍物
+  for (let iter = 0; iter < 4; iter++) {
+    const feetYNow = playerPos.y - Player.baseY;
+    const headYNow = feetYNow + Player.height;
+    let stuck = false;
+    for (const obs of Game.obstacles) {
+      // 严格 XZ 判定（玩家中心在障碍物内）
+      if (playerPos.x > obs.min.x && playerPos.x < obs.max.x &&
+          playerPos.z > obs.min.z && playerPos.z < obs.max.z) {
+        // 脚部明显低于顶部且头部高于地面 → 卡在障碍物内部
+        // 0.15 容差避免误判站在顶部的玩家（feetY ≈ obsTop）
+        if (feetYNow < obs.height - 0.15 && headYNow > 0.05) {
+          // 推出到最近的边缘
+          const dMinX = playerPos.x - obs.min.x;
+          const dMaxX = obs.max.x - playerPos.x;
+          const dMinZ = playerPos.z - obs.min.z;
+          const dMaxZ = obs.max.z - playerPos.z;
+          const minD = Math.min(dMinX, dMaxX, dMinZ, dMaxZ);
+          if (minD === dMinX) { playerPos.x = obs.min.x - radius; Player.velocity.x = 0; }
+          else if (minD === dMaxX) { playerPos.x = obs.max.x + radius; Player.velocity.x = 0; }
+          else if (minD === dMinZ) { playerPos.z = obs.min.z - radius; Player.velocity.z = 0; }
+          else { playerPos.z = obs.max.z + radius; Player.velocity.z = 0; }
+          stuck = true;
+          break;
+        }
+      }
+    }
+    if (!stuck) break;
   }
 
   const speedFactor = Player.isSneaking ? 0.4 : (Player.isRunning ? 1.4 : 1);
@@ -6075,7 +6671,7 @@ function updatePlayer(dt) {
 
   Player.leanOffset += (Player.targetLean - Player.leanOffset) * Math.min(1, dt * 8);
 
-  if (weaponGroup && !Weapon.isReloading) {
+  if (weaponGroup && !Weapon.isReloading && !Weapon.isSwitching) {
     const aiming = Player.isAiming;
     const targetX = aiming ? (weaponHome.x * 0.1) : weaponHome.x + Player.weaponBobX;
     // 开镜时稍微上抬并贴近
@@ -6404,6 +7000,7 @@ function startGame() {
   Consumables.acceleratorTime = 0;
   Equipment.helmet = 0;
   Equipment.armor = 0;
+  Storage.slots = []; // 清空储物空间
   // 应用局外商店购买
   applyPreGamePurchases();
   // 根据所选永久武器重建武器外观
@@ -6412,6 +7009,11 @@ function startGame() {
   if (ammoWeaponEl) ammoWeaponEl.textContent = CurrentWeapon.shortName + ' // ' + CurrentWeapon.name.split(' ').slice(1).join(' ');
   Game.enemies.forEach(e => removeEnemy(e));
   Game.enemies = [];
+  // 重置生成队列，防止残留的 setTimeout(spawnNextEnemy) 在新游戏开始前生成敌人
+  spawnQueue = [];
+  spawnedCount = 0;
+  Game.enemiesRemaining = 0;
+  Game.waveActive = false;
   // 清理残留的死亡动画对象
   if (Game.dyingEnemies && Game.dyingEnemies.length > 0) {
     Game.dyingEnemies.forEach(e => removeEnemy(e));
@@ -6856,6 +7458,7 @@ function animate() {
     updatePlayer(dt);
     Game.enemies.forEach(e => updateEnemy(e, dt));
     updateReload(dt);
+    updateWeaponSwitch(dt);
     updateTracers(dt);
     updateConsumableEffects(dt);
     // 小地图每2帧渲染一次（30fps），降低2D Canvas开销
